@@ -190,7 +190,6 @@
   "src/renderers/webgl/plugins/SpritePlugin.js",
   "src/extras/CurveUtils.js",
   "src/extras/GeometryUtils.js",
-  "src/extras/ImageUtils.js",
   "src/extras/SceneUtils.js",
   "src/extras/ShapeUtils.js",
   "src/extras/audio/Audio.js",
@@ -253,5 +252,6 @@
   "src/extras/objects/MorphBlendMesh.js",
   "examples/js/controls/OrbitControls.js",
   "examples/js/loaders/OBJLoader.js",
-  "examples/js/loaders/deprecated/SceneLoader.js"
+  "examples/js/loaders/deprecated/SceneLoader.js",
+  "examples/js/modifiers/SubdivisionModifier.js"
 ]

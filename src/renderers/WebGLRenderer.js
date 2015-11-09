@@ -2707,6 +2707,10 @@ THREE.WebGLRenderer = function ( parameters ) {
 
 	function uploadTexture( textureProperties, texture, slot ) {
 
+		//console.log("Uploading Texture: " + texture.image.currentSrc);
+
+		var t0 = new Date().getTime();
+
 		if ( textureProperties.__webglInit === undefined ) {
 
 			textureProperties.__webglInit = true;
@@ -2824,7 +2828,9 @@ THREE.WebGLRenderer = function ( parameters ) {
 		textureProperties.__version = texture.version;
 
 		if ( texture.onUpdate ) texture.onUpdate( texture );
+		var t1 = new Date().getTime();
 
+		console.log("Uploaded Texture: (" + (t1 - t0) + ") " + texture.image.currentSrc);
 	}
 
 	this.setTexture = function ( texture, slot ) {

@@ -251,7 +251,6 @@
   "src/extras/objects/ImmediateRenderObject.js",
   "src/extras/objects/MorphBlendMesh.js",
   "examples/js/controls/OrbitControls.js",
-  "examples/js/loaders/OBJLoader.js",
   "examples/js/loaders/deprecated/SceneLoader.js",
   "examples/js/modifiers/SubdivisionModifier.js"
 ]

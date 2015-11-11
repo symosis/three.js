@@ -7,7 +7,8 @@
 
 THREE.WebGLRenderer = function ( parameters ) {
 
-	console.log( 'THREE.WebGLRenderer', THREE.REVISION );
+	//console.log( 'THREE.WebGLRenderer', THREE.REVISION );
+	console.log( 'starting ThreeJS WebGLRenderer r' + THREE.REVISION);
 
 	parameters = parameters || {};
 

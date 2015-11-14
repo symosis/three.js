@@ -112,8 +112,8 @@ THREE.EffectComposer.prototype = {
 
 			var pixelRatio = this.renderer.getPixelRatio();
 
-			renderTarget.width  = Math.floor( this.renderer.context.canvas.width  / pixelRatio );
-			renderTarget.height = Math.floor( this.renderer.context.canvas.height / pixelRatio );
+			renderTarget.width  = Math.floor( this.renderer.context.canvas.width  * pixelRatio );
+			renderTarget.height = Math.floor( this.renderer.context.canvas.height * pixelRatio );
 
 		}
 

@@ -173,6 +173,7 @@ THREE.WebGLProgram = ( function () {
 
 				'precision ' + parameters.precision + ' float;',
 				'precision ' + parameters.precision + ' int;',
+				'precision ' + parameters.precision + ' sampler2D;',
 
 				'#define SHADER_NAME ' + material.__webglShader.name,
 
@@ -287,6 +288,7 @@ THREE.WebGLProgram = ( function () {
 
 				'precision ' + parameters.precision + ' float;',
 				'precision ' + parameters.precision + ' int;',
+				'precision ' + parameters.precision + ' sampler2D;',
 
 				'#define SHADER_NAME ' + material.__webglShader.name,
 

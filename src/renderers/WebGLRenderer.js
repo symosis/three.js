@@ -1666,7 +1666,8 @@ THREE.WebGLRenderer = function ( parameters ) {
 
 			if ( material instanceof THREE.MeshPhongMaterial ||
 				 material instanceof THREE.MeshLambertMaterial ||
-				 material.lights ) {
+				 material.lights ||
+				 material.passLights) {
 
 				if ( _lightsNeedUpdate ) {
 

@@ -252,5 +252,22 @@
   "src/extras/objects/MorphBlendMesh.js",
   "examples/js/controls/OrbitControls.js",
   "examples/js/loaders/deprecated/SceneLoader.js",
-  "examples/js/modifiers/SubdivisionModifier.js"
+  "examples/js/modifiers/SubdivisionModifier.js",
+
+  "examples/js/postprocessing/EffectComposer.js",
+  "examples/js/postprocessing/ShaderPass.js",
+  "examples/js/postprocessing/RenderPass.js",
+  "examples/js/postprocessing/MaskPass.js",
+  "examples/js/postprocessing/BloomPass.js",
+  "examples/js/postprocessing/BokehPass.js",
+  "examples/js/postprocessing/FilmPass.js",
+
+  "examples/js/shaders/FilmShader.js",
+  "examples/js/shaders/ConvolutionShader.js",
+  "examples/js/shaders/CopyShader.js",
+  "examples/js/shaders/DotScreenShader.js",
+  "examples/js/shaders/RGBShiftShader.js",
+  "examples/js/shaders/FXAAShader.js",
+  "examples/js/shaders/BokehShader.js"
+
 ]

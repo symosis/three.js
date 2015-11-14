@@ -24,7 +24,7 @@ THREE.Texture = function ( image, mapping, wrapS, wrapT, magFilter, minFilter, f
 	this.magFilter = magFilter !== undefined ? magFilter : THREE.LinearFilter;
 	this.minFilter = minFilter !== undefined ? minFilter : THREE.LinearMipMapLinearFilter;
 
-	this.anisotropy = anisotropy !== undefined ? anisotropy : 1;
+	this.anisotropy = anisotropy !== undefined ? anisotropy : 4;
 
 	this.format = format !== undefined ? format : THREE.RGBAFormat;
 	this.type = type !== undefined ? type : THREE.UnsignedByteType;

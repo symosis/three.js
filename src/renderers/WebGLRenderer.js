@@ -7,8 +7,7 @@
 
 THREE.WebGLRenderer = function ( parameters ) {
 
-	//console.log( 'THREE.WebGLRenderer', THREE.REVISION );
-	console.log( 'starting ThreeJS WebGLRenderer r' + THREE.REVISION);
+	console.log( 'ThreeJS WebGLRenderer r' + THREE.REVISION);
 
 	parameters = parameters || {};
 
@@ -2832,7 +2831,14 @@ THREE.WebGLRenderer = function ( parameters ) {
 		if ( texture.onUpdate ) texture.onUpdate( texture );
 		var t1 = new Date().getTime();
 
-		console.log("Uploaded Texture: (" + (t1 - t0) + ") " + texture.image.currentSrc);
+
+        if (THREE.debug) {
+            var location = texture.image;
+            if (texture.image.currentSrc != null)
+                location = texture.image.currentSrc;
+
+            console.log("Uploaded Texture: (" + (t1 - t0) + ") " + location);
+        }
 	}
 
 	this.setTexture = function ( texture, slot ) {
